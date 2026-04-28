@@ -22,7 +22,7 @@ A "reasoning loop" or "infinite loop" occurs when the Critic module becomes over
 When the Critic identifies a flaw—even one that is technically insignificant—it may trigger a "Hard Reset" of the current reasoning chain. If the Generator’s attempt to fix that flaw introduces a new, equally minor flaw, the Critic triggers another reset.
 
 **The failure cycle looks like this:**
-`Generator Proposal` $\rightarrow$ `Critic Rejection` $\rightarrow$ `Generator Correction` $\rightarrow$ `Critic Rejection (on a new detail)` $\rightarrow$ `Loop`.
+`Generator Proposal` → `Critic Rejection` → `Generator Correction` → `Critic Rejection (on a new detail)` → `Loop`.
 
 Because the model is trained to be helpful and accurate, it may feel "compelled" to solve the 1% edge case before outputting the 99% functional solution, leading to the "Actually... wait... no..." behavior observed in the reasoning trace.
 

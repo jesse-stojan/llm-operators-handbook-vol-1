@@ -2,7 +2,7 @@
 > Following a "pragmatic" philosophy, this handbook is designed to be lean and linear. It moves from the **Theoretical** (how it works) to the **Structural** (the system prompt) to the **Operational** (how you actually type the prompts), ending with a **Recovery** section for when things go sideways.
 
 # LLM Operators Handbook: Interfacing with Reasoning Models
-###### *(Draft v1.0)*
+###### *(Draft v1.1)*
 
 ## Table of Contents
 
@@ -41,7 +41,7 @@
 ### [Chapter 5: Workflow Optimization (The Process)](./chapter-5.md)
 *Structuring the interaction to maintain stability.*
 * **Modularization:** The "Compilation Unit" approach to prompting.
-* **Step-Wise Implementation:** Interface $\rightarrow$ Logic $\rightarrow$ Optimization.
+* **Step-Wise Implementation:** Interface → Logic → Optimization.
 * **Few-Shot Scaffolding:** Using reference snippets to lock in style.
 
 ---

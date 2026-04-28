@@ -23,17 +23,17 @@ In software engineering, we do not write a million lines of code in a single fil
 ## 5.2 Step-Wise Implementation: The Assembly Line
 For advanced design patterns, use a linear progression of complexity. Do not ask for a "perfectly optimized implementation" on the first try. Instead, follow this sequence:
 
-### Stage 1: Interface $\rightarrow$ The Skeleton
+### Stage 1: Interface → The Skeleton
 Focus exclusively on the API, headers, and class signatures.
 *   **Goal:** Agree on the "contract."
 *   **Prompt focus:** "Define the public interface and data structures. No implementation logic yet."
 
-### Stage 2: Logic $\rightarrow$ The Muscle
+### Stage 2: Logic → The Muscle
 Fill in the implementation based on the agreed-upon interface.
 *   **Goal:** Achieve functional correctness (the "80% solution").
 *   **Prompt focus:** "Implement the logic for the functions defined in the previous step. Prioritize functional correctness over performance."
 
-### Stage 3: Optimization $\rightarrow$ The Polish
+### Stage 3: Optimization → The Polish
 Refine the code for performance, memory, or specific hardware constraints.
 *   **Goal:** Reach the "99% solution."
 *   **Prompt focus:** "Now that the logic is functional, optimize this specific loop for cache alignment" or "Replace this heap allocation with a stack-based allocator."
@@ -53,10 +53,10 @@ Instead of saying: *"Use a modern C++ style with RAII and avoid raw pointers,"*
 | Step | Action | Objective | Risk if Skipped |
 | :--- | :--- | :--- | :--- |
 | **1. Modularize** | Break task into units | Limit cognitive load | Global reasoning collapse |
-| **2. Interface** | Define signatures | Lock the contract | Mid-stream API changes $\rightarrow$ Loop |
-| **3. Implement** | Write core logic | Functional baseline | Over-engineering $\rightarrow$ Loop |
-| **4. Optimize** | Refine for performance | Professional polish | Premature optimization $\rightarrow$ Loop |
-| **5. Scaffold** | Provide example code | Style consistency | Generic/Wrong style $\rightarrow$ Manual rewrite |
+| **2. Interface** | Define signatures | Lock the contract | Mid-stream API changes → Loop |
+| **3. Implement** | Write core logic | Functional baseline | Over-engineering → Loop |
+| **4. Optimize** | Refine for performance | Professional polish | Premature optimization → Loop |
+| **5. Scaffold** | Provide example code | Style consistency | Generic/Wrong style → Manual rewrite |
 
 ---
 

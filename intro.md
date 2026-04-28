@@ -21,7 +21,7 @@ To achieve professional-grade stability and correctness, the user must shift to 
 
 Operating the engine requires a shift in methodology:
 1.  **From Superlatives to Constraints:** Replacing "make it the best" with "prioritize low latency over throughput."
-2.  **From Conversations to Pipelines:** Replacing a back-and-forth chat with a linear execution process (Analysis $\rightarrow$ Plan $\rightarrow$ Implementation).
+2.  **From Conversations to Pipelines:** Replacing a back-and-forth chat with a linear execution process (Analysis → Plan → Implementation).
 3.  **From Passive to Active Supervision:** Monitoring the internal reasoning trace in real-time and issuing "Interrupt Commands" the moment a spiral is detected.
 
 ## Objectives of this Handbook

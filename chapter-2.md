@@ -57,7 +57,7 @@ Words of Priority are used to solve "ties" in the model's internal logic. When t
 | :--- | :--- | :--- |
 | **Lock Logic** | Binding, Deterministic, Definitive | Stops the "What if?" debate. |
 | **Stop Loops** | Forbidden, Prohibited, Strict | Kills the "Actually... wait..." spiral. |
-| **Ensure Delivery** | Sufficient, Pragmatic, Functional | Lowers the bar from Perfect $\rightarrow$ Working. |
+| **Ensure Delivery** | Sufficient, Pragmatic, Functional | Lowers the bar from Perfect → Working. |
 | **Force Decision** | Precedence, Override, Primary | Forces Completion over Perfection. |
 
 ---

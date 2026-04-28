@@ -46,7 +46,7 @@ When drafting a system prompt for high-level technical work, ensure it contains 
 | Pillar | Goal | Key Phrase to Include |
 | :--- | :--- | :--- |
 | **Persona** | Maximize Signal | "Technical, direct, and concise. Zero preamble." |
-| **Pipeline** | Prevent Recursion | "Linear pipeline: Analysis $\rightarrow$ Binding Plan $\rightarrow$ Implementation." |
+| **Pipeline** | Prevent Recursion | "Linear pipeline: Analysis → Binding Plan → Implementation." |
 | **Closure** | Ensure Output | "Prioritize completion over exhaustive perfection." |
 
 ---
