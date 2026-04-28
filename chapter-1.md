@@ -16,6 +16,15 @@ High-reasoning LLMs do not simply predict the next token in a linear fashion. Th
 
 In a healthy execution, the Generator proposes a solution, the Critic identifies a legitimate flaw, the Generator corrects it, and the final output is produced. This is **iterative refinement**.
 
+> [!NOTE]
+> The **Generator vs. Critic** framing is a useful **user-level metaphor** for observable behavior. It is **not** the literal architecture of an LLM.
+> 
+> LLMs are decoder-only transformers: stacks of identical layers using the **same weights and attention mechanisms** for everything. There are no separate internal "voices" or modules arguing like a dialogue.
+> 
+> Instead, during **autoregressive generation**, the model computes probabilities for the *next token* based on the entire context window so far. What feels like a "Critic taking over" is usually the model shifting probability mass toward more hedged, cautious, or iterative language as the accumulated prompt/Chain-of-Thought rewards thoroughness (very common in reasoning-tuned models).
+
+> - **Microphone + Speaker Feedback Loop**: Imagine speaking into a mic while the speakers play the sound back in real time. A small sound gets picked up, amplified, and fed back — quickly turning into a loud, screeching loop. Superlatives ("best", "perfect", "optimal") or open-ended perfection demands act like moving the mic closer to the speaker: they create positive feedback that turns smooth generation into escalating refinement, hedging, and repetition.
+
 ## 1.2 The Perfectionism Loop (Recursive Failure)
 A "reasoning loop" or "infinite loop" occurs when the Critic module becomes over-aggressive or is given an impossible standard of success. 
 
@@ -48,7 +57,7 @@ To maintain stability, the operator must realize that the model is not "forgetti
 
 - [x] Chapter 1
 
-### [➡️ Chatper 2: Linguistic Tuning (The Vocabulary of Control)](./chapter-2.md)
+### [➡️ Chapter 2: Linguistic Tuning (The Vocabulary of Control)](./chapter-2.md)
 ###### [➡️ Chapter 3: Engineering the System Prompt](./chapter-3.md)
 ###### [➡️ Chapter 4: The Art of Framing (The Input Interface)](./chapter-4.md)
 ###### [➡️ Chapter 5: Workflow Optimization (The Process)](./chapter-5.md)

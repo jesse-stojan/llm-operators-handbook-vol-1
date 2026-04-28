@@ -56,7 +56,7 @@ The more you constrain the model, the more stable the model becomes. Constraints
 ###### [🏠 Table of Contents](./README.md)
 ###### [⬅️ Introduction: The Shift in Perspective](./intro.md)
 ###### [⬅️ Chapter 1: The Architecture of Thought](./chapter-1.md)
-###### [⬅️ Chatper 2: Linguistic Tuning (The Vocabulary of Control)](./chapter-2.md)
+###### [⬅️ Chapter 2: Linguistic Tuning (The Vocabulary of Control)](./chapter-2.md)
 ###### [⬅️ Chapter 3: Engineering the System Prompt](./chapter-3.md)
 
 - [x] Chapter 4

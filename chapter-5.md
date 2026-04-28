@@ -58,12 +58,24 @@ Instead of saying: *"Use a modern C++ style with RAII and avoid raw pointers,"*
 | **4. Optimize** | Refine for performance | Professional polish | Premature optimization → Loop |
 | **5. Scaffold** | Provide example code | Style consistency | Generic/Wrong style → Manual rewrite |
 
+> [!IMPORTANT]
+> **Context Window Realities**
+> All LLMs have a hard token limit (context length) — typically 128k–256k tokens for strong reasoning models in 2026, though effective performance often degrades well before the maximum. Exceeding it causes truncation (oldest tokens dropped first).
+> 
+> **Context drift** is a common failure mode in long sessions: as the conversation grows, earlier instructions, assumptions, or code decisions get diluted or contradicted by later text. The model doesn't *"remember"* equally well across the whole window—attention is stronger on recent content.
+> 
+> **Mitigation tactics:**
+> - Keep individual prompts and responses modular and self-contained.
+> - Periodically summarize key decisions/state into a fresh "checkpoint" prompt.
+> - Use explicit resets or new chats for major phase changes.
+> - Monitor total tokens (many interfaces show this) and stay well under 50–70% of the limit for reliable behavior.
+
 ---
 
 ###### [🏠 Table of Contents](./README.md)
 ###### [⬅️ Introduction: The Shift in Perspective](./intro.md)
 ###### [⬅️ Chapter 1: The Architecture of Thought](./chapter-1.md)
-###### [⬅️ Chatper 2: Linguistic Tuning (The Vocabulary of Control)](./chapter-2.md)
+###### [⬅️ Chapter 2: Linguistic Tuning (The Vocabulary of Control)](./chapter-2.md)
 ###### [⬅️ Chapter 3: Engineering the System Prompt](./chapter-3.md)
 ###### [⬅️ Chapter 4: The Art of Framing (The Input Interface)](./chapter-4.md)
 
